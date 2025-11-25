@@ -1,0 +1,53 @@
+En:
+Manipulator parts:
+- 2 beams for moving the manipulator (0.5 m)
+- a pipe with a funnel and a mount for the middle stepper motor. Pipe #1
+- a corner pipe. Pipe #2
+- the main pipe with a mount for the Arduino UNO R3. Pipe #3
+- a corner pipe with a mount for the lower stepper motor. Pipe #4
+- a pipe with slots for sliding another pipe out of the slots. Pipe #5
+- a pipe sliding out of the slots of the pipe above, with a mount for the Ultrasonic Distance Sensor. Pipe #6
+Mechanisms:
+- Upper stepper motor (responsible for left and right movement of the manipulator, parallel to the surface. (OZ axis)). Motor #1
+- Middle stepper motor (responsible for the movement of the manipulator around its axis. Rotation relative to the top point (Y axis)). Motor #2
+- Lower stepper motor (responsible for raising and lowering the retractable part of the manipulator for plowing and watering the soil.
+Rotation relative to the middle pipe, which houses the Arduino UNO R3 (OX axis)). Motor #3
+- Ultrasonic distance sensor (responsible for measuring the distance to the plant along the OX axis)
+1. Using the button on the prototyping board, move the manipulator right or left using the upper stepper motor.
+2. After stopping, the lower stepper motor lowers pipe #6 (up to a certain point!)!!!!!
+3. Watering and irrigation occur. Plants
+4. Motor #2 and Motor #1 work together thanks to the Ultrasonic Distance Sensor (parking sensor), and the "REALIZATION?" manipulator
+makes a small, but ideal, circle around the plant (set an acceptable value for the parking sensor,
+at which Motors #1 and #2 will perform combined movements to maintain the acceptable value,
+while Motor #3 continues to rotate).
+5. After completing step (4), the manipulator returns to the initial position of Motors #2 and #3 for further movement.
+6. Repeat step (1) and steps (2) and (3) until the manipulator has traveled the entire distance of the beams.
+7. Return to the initial position (or stop in place).
+
+
+
+Ru:
+Части манипулятора:
+-2 балки для перемещения манипулятора (0.5м)
+- труба с воронкой и креплением для среднего шагового моторчика. Труба № 1
+- угловая труба. Труба № 2
+- основная труба с креплением для Arduino UNO R3. Труба № 3
+- угловая труба с креплением для нижнего шагового моторчика. Труба № 4
+- труба с пазами для выдвижения из нее другой трубы из пазов. Труба № 5
+- труба, выдвигающаяся из пазов трубы выше, с креплением для Ультразвукового датчика расстояния. Труба № 6 
+Механизмы:
+- Верхний шаговый моторчик (отвечает за перемещение влево и вправо манипулятора, параллельно поверхности. (Ось OZ)). Моторчик № 1
+- Средний шаговый моторчик (отвечает за движение манипулятора вокруг своей оси. Вращение относительно верхней точки. (Ось OY)). Моторчик № 2
+- Нижний шаговый моторчик (отвечает за подъем и спуск выдвижной части манипулятора для вспахивания и полива земли.
+    Вращение отностительно средней трубы, на которой распологается Arduino UNO R3. (Ось OX)). Моторчик № 3
+- Ультразвуковой датчик расстояния (отвечает за измерение расстояния до растения в оси OX)
+1. По кнопке с платы для прототипирования перемещаем манипулятор вправо или влево верхним шаговым двигателем.
+2. После остановки нижний шаговый моторчик опускает вниз трубу № 6 (!до определённого момента!)                                !!!!!
+3. Происходит полив и ?орошение? растений
+4. Моторчик № 2 и Моторчик № 1 благодоря Ультразвуковому датчику расстояния (парктронник) работают в паре и манипулятор   ?РЕАЛИЗАЦИЯ?
+    делает не большой оборот вокруг растения, а идеально вокруг него (установить допустимое значение для парктронника,
+    при котором Моторчики № 1 и № 2 будут совершать совместные движения для сохранения допустимого значения, 
+    параллельно этому Моторчик № 3 продолжает совершать обороты)
+5. После завершения пункта (4) манипулятор возвращается в изначальное положение Моторчиков № 2 и № 3 для дальнейшего движения
+6. Повторени пункта (1) и пунктов (2) и (3) до того момента, пока манипулятор не пройдёт всю дистанцию балок.
+7. Возвращение в изначальное положение (либо остановка на месте).
