@@ -1,1 +1,0 @@
-// Code for ultrasonic distance sensor. Код для ультразвукового датчика расстояния
